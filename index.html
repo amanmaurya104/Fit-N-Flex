@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit & Flex | Home</title>    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="menu-button" id="menu-button">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar" id="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#workout-plans">Workout Plans</a></li>
+            <li><a href="#nutrition">Nutrition & Diet</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Unleash Your Potential with Fit & Flex</h1>
+            <p>Custom Workout Plans and Nutritional Guidance</p>
+            <a href="#workout-plans" class="cta-btn">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Workout Categories -->
+    <section id="workout-plans" class="workout-categories">
+        <h2>Workout Categories</h2>
+        <div class="categories-grid">
+            <div class="category">
+                <div class="icon">
+                    <img src="images/bicep-tricep.png" alt="Biceps & Triceps">
+                </div>
+                <h3><a href="biceps-triceps.html">Biceps & Triceps</a></h3>
+                <p>Strengthen your arms with targeted workouts</p>
+            </div>
+            <div class="category">
+                <div class="icon">
+                    <img src="images/legs.png" alt="Legs">
+                </div>
+                <h3><a href="Legs.html">Legs</a></h3>
+                <p>Develop strength and mobility for your lower body</p>
+            </div>
+            <div class="category">
+                <div class="icon">
+                    <img src="images/back-shoulders.png" alt="Back & Shoulders">
+                </div>
+                <h3><a href="Back.html">Back & Shoulders</a></h3>
+                <p>Build a powerful upper body</p>
+            </div>
+            <div class="category">
+                <div class="icon">
+                    <img src="images/chest.png" alt="Chest">
+                </div>
+                <h3><a href="Chest.html">Chest</a></h3>
+                <p>Work your pectorals and upper body strength</p>
+            </div>
+            <div class="category">
+                <div class="icon">
+                    <img src="images/core-abs.png" alt="Core & Abs">
+                </div>
+                <h3><a href="Core.html">Core & Abs</a></h3>
+                <p>Sculpt and tone your midsection</p>
+            </div>
+            <div class="category">
+                <div class="icon">
+                    <img src="images/full-body.png" alt="Full-Body Workouts">
+                </div>
+                <h3><a href="Full Body.html">Full-Body Workouts</a></h3>
+                <p>Engage multiple muscle groups</p>
+            </div>
+            <div class="category">
+                <div class="icon">
+                    <img src="images/cardio-hiit.png" alt="HIIT & Cardio">
+                </div>
+                <h3><a href="Hiit.html">HIIT & Cardio</a></h3>
+                <p>Burn fat and improve endurance</p>
+            </div>
+            <div class="category">
+                <div class="icon">
+                    <img src="images/yoga-flexibility.png" alt="Yoga & Flexibility">
+                </div>
+                <h3><a href="Yoga.html">Yoga & Flexibility</a></h3>
+                <p>Increase flexibility and mental clarity</p>
+            </div>
+            <div class="category">
+                <div class="icon">
+                    <img src="images/custom-plans.png" alt="Custom Plans">
+                </div>
+                <h3><a href="custom-plans.html">Custom Plans</a></h3>
+                <p>Personalized plans for your fitness goals</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="nutrition-section">
+        <h2>Nutrition & Diet</h2>
+        <div class="nutrition-content">
+            <div class="icon">🍎</div>
+            <p>Fuel your body with the right nutrition to maximize workout results. Explore personalized diet plans tailored to your goals.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p>© 2024 Fit & Flex. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const navbar = document.getElementById('navbar');
+
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

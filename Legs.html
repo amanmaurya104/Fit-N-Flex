@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legs Workouts | Fit N' Flex</title>
+    <link rel="stylesheet" href="workout.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Fit N' Flex Logo">
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#workout-plans">Workout Plans</a></li>
+            <li><a href="index.html#nutrition">Nutrition & Diet</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Legs Workouts Section -->
+    <section>
+        <div class="workout-section">
+            <h2>Legs Workout</h2>
+            <div class="workout-content">
+                <p><strong>Exercise 1: Squats</strong> - 4 sets of 10 reps</p>
+                <p>Squats are a fundamental exercise for building strength in the legs and glutes.</p>
+                <video controls>
+                    <source src="videos/squats.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 2: Lunges</strong> - 4 sets of 12 reps</p>
+                <p>Lunges target the quads, glutes, and hamstrings while improving balance.</p>
+                <video controls>
+                    <source src="videos/lunges.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 3: Leg Press</strong> - 3 sets of 10 reps</p>
+                <p>The leg press effectively targets the quads, hamstrings, and glutes.</p>
+                <video controls>
+                    <source src="videos/leg-press.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 4: Deadlifts</strong> - 3 sets of 10 reps</p>
+                <p>Deadlifts are excellent for working the hamstrings, glutes, and lower back.</p>
+                <video controls>
+                    <source src="videos/deadlifts.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 5: Calf Raises</strong> - 4 sets of 15 reps</p>
+                <p>Calf raises specifically target the calf muscles for improved strength and definition.</p>
+                <video controls>
+                    <source src="videos/calf-raises.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <a href="index.html#workout-plans" class="cta-btn">View More Workouts</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Fit N' Flex. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const workoutSections = document.querySelectorAll('.workout-section');
+
+        workoutSections.forEach(section => {
+            section.querySelector('h2').addEventListener('click', () => {
+                section.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

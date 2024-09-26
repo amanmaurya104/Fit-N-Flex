@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core & Abs Workouts | Fit N' Flex</title>
+    <link rel="stylesheet" href="workout.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Fit N' Flex Logo">
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#workout-plans">Workout Plans</a></li>
+            <li><a href="index.html#nutrition">Nutrition & Diet</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Core & Abs Workouts Section -->
+    <section>
+        <div class="workout-section">
+            <h2>Core Workout</h2>
+            <div class="workout-content">
+                <p><strong>Exercise 1: Plank</strong> - 3 sets of 30-60 seconds</p>
+                <p>The plank is an isometric exercise that strengthens the entire core, promoting stability and endurance.</p>
+                <video controls>
+                    <source src="videos/plank.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 2: Russian Twists</strong> - 3 sets of 15 reps per side</p>
+                <p>This exercise targets the obliques and helps improve rotational strength.</p>
+                <video controls>
+                    <source src="videos/russian-twists.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 3: Bicycle Crunches</strong> - 3 sets of 15-20 reps</p>
+                <p>Bicycle crunches engage the rectus abdominis and obliques for a comprehensive core workout.</p>
+                <video controls>
+                    <source src="videos/bicycle-crunches.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 4: Mountain Climbers</strong> - 3 sets of 30 seconds</p>
+                <p>This dynamic exercise targets the core while also elevating your heart rate for a cardio boost.</p>
+                <video controls>
+                    <source src="videos/mountain-climbers.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 5: Leg Raises</strong> - 3 sets of 12-15 reps</p>
+                <p>Leg raises effectively target the lower abdominal muscles and enhance overall core strength.</p>
+                <video controls>
+                    <source src="videos/leg-raises.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="workout-section">
+            <h2>Abs Workout</h2>
+            <div class="workout-content">
+                <p><strong>Exercise 1: Crunches</strong> - 3 sets of 15-20 reps</p>
+                <p>Crunches are a classic abdominal exercise that primarily targets the rectus abdominis.</p>
+                <video controls>
+                    <source src="videos/crunches.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 2: Flutter Kicks</strong> - 3 sets of 15-20 reps</p>
+                <p>This exercise targets the lower abs and helps in building core endurance.</p>
+                <video controls>
+                    <source src="videos/flutter-kicks.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 3: Plank Shoulder Taps</strong> - 3 sets of 10 reps per side</p>
+                <p>This variation of the plank engages the core while improving shoulder stability.</p>
+                <video controls>
+                    <source src="videos/plank-shoulder-taps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 4: Side Planks</strong> - 3 sets of 30 seconds per side</p>
+                <p>Side planks are excellent for targeting the obliques and enhancing lateral core stability.</p>
+                <video controls>
+                    <source src="videos/side-planks.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 5: V-Ups</strong> - 3 sets of 10-12 reps</p>
+                <p>This exercise works both the upper and lower abs simultaneously for a comprehensive core workout.</p>
+                <video controls>
+                    <source src="videos/v-ups.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <a href="index.html#workout-plans" class="cta-btn">View More Workouts</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Fit N' Flex. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const workoutSections = document.querySelectorAll('.workout-section');
+
+        workoutSections.forEach(section => {
+            section.querySelector('h2').addEventListener('click', () => {
+                section.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

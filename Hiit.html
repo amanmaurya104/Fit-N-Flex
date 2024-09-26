@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIIT Cardio Workouts | Fit N' Flex</title>
+    <link rel="stylesheet" href="workout.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Fit N' Flex Logo">
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#workout-plans">Workout Plans</a></li>
+            <li><a href="index.html#nutrition">Nutrition & Diet</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HIIT Cardio Workouts Section -->
+    <section>
+        <div class="workout-section">
+            <h2>HIIT Cardio Workout</h2>
+            <div class="workout-content">
+                <p><strong>Exercise 1: Jumping Jacks</strong> - 30 seconds on, 15 seconds rest (4 rounds)</p>
+                <p>Jumping jacks are a classic cardio move that elevates heart rate while engaging multiple muscle groups.</p>
+                <video controls>
+                    <source src="videos/jumping-jacks.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 2: High Knees</strong> - 30 seconds on, 15 seconds rest (4 rounds)</p>
+                <p>High knees are great for boosting heart rate and improving agility while targeting the core and legs.</p>
+                <video controls>
+                    <source src="videos/high-knees.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 3: Burpees</strong> - 30 seconds on, 15 seconds rest (4 rounds)</p>
+                <p>Burpees are a full-body exercise that combines strength and cardio for a high-intensity workout.</p>
+                <video controls>
+                    <source src="videos/burpees.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 4: Mountain Climbers</strong> - 30 seconds on, 15 seconds rest (4 rounds)</p>
+                <p>This exercise engages the core and builds endurance, making it an excellent choice for HIIT.</p>
+                <video controls>
+                    <source src="videos/mountain-climbers.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 5: Squat Jumps</strong> - 30 seconds on, 15 seconds rest (4 rounds)</p>
+                <p>Squat jumps are a powerful lower-body exercise that also elevates heart rate and boosts explosive strength.</p>
+                <video controls>
+                    <source src="videos/squat-jumps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 6: Plank Jacks</strong> - 30 seconds on, 15 seconds rest (4 rounds)</p>
+                <p>This variation of the plank adds a cardio element while targeting the core, shoulders, and legs.</p>
+                <video controls>
+                    <source src="videos/plank-jacks.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 7: Skaters</strong> - 30 seconds on, 15 seconds rest (4 rounds)</p>
+                <p>Skaters improve lateral movement and agility, targeting the legs and core while elevating heart rate.</p>
+                <video controls>
+                    <source src="videos/skaters.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <a href="index.html#workout-plans" class="cta-btn">View More Workouts</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Fit N' Flex. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const workoutSections = document.querySelectorAll('.workout-section');
+
+        workoutSections.forEach(section => {
+            section.querySelector('h2').addEventListener('click', () => {
+                section.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

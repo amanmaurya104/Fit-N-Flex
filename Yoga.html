@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga & Flexibility Workouts | Fit N' Flex</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Fit N' Flex Logo">
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#workout-plans">Workout Plans</a></li>
+            <li><a href="index.html#nutrition">Nutrition & Diet</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Yoga & Flexibility Workouts Section -->
+    <section>
+        <div class="workout-section">
+            <h2>Yoga & Flexibility Workout</h2>
+            <div class="workout-content">
+                <p><strong>Pose 1: Downward Dog</strong> - Hold for 30 seconds</p>
+                <p>Downward Dog stretches the back, hamstrings, and calves while strengthening the arms and legs.</p>
+                <video controls>
+                    <source src="videos/downward-dog.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Pose 2: Warrior I</strong> - Hold for 30 seconds each side</p>
+                <p>This pose strengthens the legs, opens the hips and chest, and stretches the arms and legs.</p>
+                <video controls>
+                    <source src="videos/warrior-i.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Pose 3: Child’s Pose</strong> - Hold for 1 minute</p>
+                <p>A resting pose that stretches the back and shoulders, promoting relaxation and flexibility.</p>
+                <video controls>
+                    <source src="videos/childs-pose.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Pose 4: Cat-Cow Stretch</strong> - 10 rounds</p>
+                <p>This dynamic stretch warms up the spine and improves flexibility and posture.</p>
+                <video controls>
+                    <source src="videos/cat-cow.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Pose 5: Seated Forward Bend</strong> - Hold for 30 seconds</p>
+                <p>This pose stretches the spine and hamstrings, promoting relaxation and flexibility.</p>
+                <video controls>
+                    <source src="videos/seated-forward-bend.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Pose 6: Pigeon Pose</strong> - Hold for 30 seconds each side</p>
+                <p>Pigeon Pose deeply stretches the hips and glutes, helping to release tension in these areas.</p>
+                <video controls>
+                    <source src="videos/pigeon-pose.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Pose 7: Corpse Pose</strong> - Hold for 5 minutes</p>
+                <p>A restorative pose that encourages deep relaxation and mindfulness, perfect for ending a yoga session.</p>
+                <video controls>
+                    <source src="videos/corpse-pose.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <a href="index.html#workout-plans" class="cta-btn">View More Workouts</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Fit N' Flex. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const workoutSections = document.querySelectorAll('.workout-section');
+
+        workoutSections.forEach(section => {
+            section.querySelector('h2').addEventListener('click', () => {
+                section.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back & Shoulders Workouts | Fit N' Flex</title>
+    <link rel="stylesheet" href="workout.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Fit N' Flex Logo">
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#workout-plans">Workout Plans</a></li>
+            <li><a href="index.html#nutrition">Nutrition & Diet</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Back & Shoulders Workouts Section -->
+    <section>
+        <div class="workout-section">
+            <h2>Back Workout</h2>
+            <div class="workout-content">
+                <p><strong>Exercise 1: Pull-Ups</strong> - 4 sets of 8-10 reps</p>
+                <p>Pull-ups are a classic exercise that targets the upper back and biceps, building overall strength.</p>
+                <video controls>
+                    <source src="videos/pull-ups.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 2: Bent-Over Rows</strong> - 4 sets of 10 reps</p>
+                <p>This exercise targets the middle back and helps improve posture and back strength.</p>
+                <video controls>
+                    <source src="videos/bent-over-rows.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 3: Deadlifts</strong> - 4 sets of 8 reps</p>
+                <p>Deadlifts engage multiple muscle groups, primarily focusing on the lower back, glutes, and hamstrings.</p>
+                <video controls>
+                    <source src="videos/deadlifts.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="workout-section">
+            <h2>Shoulders Workout</h2>
+            <div class="workout-content">
+                <p><strong>Exercise 1: Overhead Press</strong> - 4 sets of 10 reps</p>
+                <p>The overhead press targets the deltoids and is essential for shoulder strength.</p>
+                <video controls>
+                    <source src="videos/overhead-press.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 2: Lateral Raises</strong> - 3 sets of 12 reps</p>
+                <p>Lateral raises focus on the medial deltoids, helping to widen the shoulders.</p>
+                <video controls>
+                    <source src="videos/lateral-raises.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 3: Face Pulls</strong> - 3 sets of 12 reps</p>
+                <p>Face pulls are great for improving shoulder stability and targeting the rear deltoids.</p>
+                <video controls>
+                    <source src="videos/face-pulls.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <a href="index.html#workout-plans" class="cta-btn">View More Workouts</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Fit N' Flex. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const workoutSections = document.querySelectorAll('.workout-section');
+
+        workoutSections.forEach(section => {
+            section.querySelector('h2').addEventListener('click', () => {
+                section.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

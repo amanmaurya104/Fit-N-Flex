@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biceps & Triceps Workouts | Fit N' Flex</title>
+    <link rel="stylesheet" href="workout.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Fit N' Flex Logo">
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#workout-plans">Workout Plans</a></li>
+            <li><a href="index.html#nutrition">Nutrition & Diet</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Biceps & Triceps Workouts Section -->
+    <section>
+        <div class="workout-section">
+            <h2>Biceps Workout</h2>
+            <div class="workout-content">
+                <p><strong>Exercise 1: Barbell Curl</strong> - 4 sets of 12 reps</p>
+                <p>The barbell curl is one of the most effective exercises for building overall bicep mass. It targets the biceps brachii and helps in building strength and definition.</p>
+                <video controls>
+                    <source src="videos/barbell-curl.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 2: Hammer Curl</strong> - 4 sets of 10 reps</p>
+                <p>The hammer curl focuses on the brachialis and brachioradialis muscles, which helps improve overall arm thickness and strength.</p>
+                <video controls>
+                    <source src="videos/hammer-curl.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 3: Concentration Curl</strong> - 3 sets of 15 reps</p>
+                <p>This isolation exercise targets the biceps peak, allowing for maximum contraction and control. It's great for defining the shape of your biceps.</p>
+                <video controls>
+                    <source src="videos/concentration-curl.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="workout-section">
+            <h2>Triceps Workout</h2>
+            <div class="workout-content">
+                <p><strong>Exercise 1: Tricep Dips</strong> - 4 sets of 12 reps</p>
+                <p>Tricep dips are a compound exercise that works the entire tricep muscle as well as your chest and shoulders. It’s great for building upper body strength.</p>
+                <video controls>
+                    <source src="videos/tricep-dips.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 2: Overhead Tricep Extension</strong> - 3 sets of 10 reps</p>
+                <p>This isolation exercise targets the long head of the triceps, helping build both strength and size. It's ideal for creating well-rounded triceps.</p>
+                <video controls>
+                    <source src="videos/overhead-extension.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <p><strong>Exercise 3: Skull Crushers</strong> - 3 sets of 12 reps</p>
+                <p>Skull crushers isolate the triceps, especially the long head, and are excellent for adding definition and size. It's a go-to move for tricep strength.</p>
+                <video controls>
+                    <source src="videos/skull-crushers.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <a href="index.html#workout-plans" class="cta-btn">View More Workouts</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Fit N' Flex. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const workoutSections = document.querySelectorAll('.workout-section');
+
+        workoutSections.forEach(section => {
+            section.querySelector('h2').addEventListener('click', () => {
+                section.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
