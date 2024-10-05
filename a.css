@@ -1,0 +1,380 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 85%; /* Maximum width */
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for better visibility */
+    transition: all 0.3s ease;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #090b69b6; /* Adjust as needed */
+}
+
+.logo img {
+    max-height: 50px; /* Adjust for desired logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 15px; /* Space between navbar items */
+}
+
+.navbar a {
+    color: #fff; /* Text color */
+    text-decoration: none;
+    padding: 10px 15px; /* Button-like padding */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for smoother effects */
+}
+
+.navbar a:hover {
+    background-color: #13bcf04b; /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 0; /* Remove padding to maximize height */
+    height: 100vh; /* Use full viewport height */
+    background: url('images/background.webp') no-repeat center center; /* Center the image */
+    background-size: cover; /* Ensure the image covers the area */
+    color: white;
+    overflow: hidden; /* Prevent overflow of the pseudo-element */
+}
+
+.hero::before {
+    content: "";
+    position: absolute; /* Position the blur effect */
+    background: inherit; /* Use the same background */
+    filter: blur(10px); /* Adjust the blur intensity */
+    z-index: 0; /* Position behind the text */
+}
+
+.hero > * {
+    position: relative; /* Keep text above the blur */
+    z-index: 1; /* Ensure text is above the blurred background */
+}
+
+.hero-text {
+    color: white; /* Ensure text is readable */
+    padding: 10px; /* Add some padding for better spacing */
+}
+
+.hero-text h1 {
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space between title and paragraph */
+}
+
+.hero-text p {
+    font-size: 1.3em; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space between paragraph and button */
+}
+
+
+
+h1, h2 {
+    text-align: center;
+    color: #333; /* Dark gray */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #28a745; /* Green */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #555; /* Medium gray */
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #28a745; /* Green focus */
+}
+
+button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.card {
+    background-color: #f8f9fa; /* Light background for card */
+    opacity: 85%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.workout-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for entries */
+    border-left: 5px solid #28a745; /* Green left border */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.workout-entry:hover {
+    background-color: #e2f0e2; /* Light green on hover */
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+.edit-button, .remove-button {
+    background-color: #ffc107; /* Yellow */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #e0a800; /* Darker yellow */
+}
+
+.remove-button {
+    background-color: #dc3545; /* Red */
+}
+
+.remove-button:hover {
+    background-color: #c82333; /* Darker red */
+}
+
+.partition {
+    height: 2px; /* Height of the partition line */
+    background-color: #ccc; /* Light gray color */
+    margin: 20px 0; /* Space around the partition */
+}
+
+/* Existing styles... */
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('DALL·E 2024-09-22 21.22.18 - A dynamic background for a fitness webpage featuring a modern gym scene. The image should show people engaged in various fitness activities, like lift.webp') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    background: rgba(68, 65, 65, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Header Styles */
+
+/* Hero Section */
+#home {
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Exercise Card Styles */
+.exercise-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exercise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.exercise-card h3 {
+    color: #17a2b8;
+    font-size: 1.8em;
+}
+
+.exercise-details {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(249, 249, 249, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.exercise-details.visible {
+    display: block;
+}
+
+/* Button Styles */
+button {
+    background: #17a2b8;
+    border: 2px solid #17a2b8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #fff;
+    color: #17a2b8;
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+form {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    transition: all 0.3s;
+}
+
+form:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    font-size: 1.2em;
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(0, 86, 179, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 4px solid rgba(23, 162, 184, 0.8);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
