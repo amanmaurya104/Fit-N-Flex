@@ -15,18 +15,22 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #090b69b6; /* Adjust as needed */
+    background-color: #090b69b6;
+    /* Adjust as needed */
 }
 
 .logo img {
-    max-height: 50px; /* Adjust for desired logo height */
-    width: auto; /* Maintain aspect ratio */
+    max-height: 50px;
+    /* Adjust for desired logo height */
+    width: auto;
+    /* Maintain aspect ratio */
 }
 
 .navbar {
     list-style-type: none;
     display: flex;
-    gap: 15px; /* Space between navbar items */
+    gap: 15px;
+    /* Space between navbar items */
 }
 
 .navbar li {
@@ -34,14 +38,16 @@ nav {
 }
 
 .navbar a {
-    color: #fff; /* Text color */
+    color: #fff;
+    /* Text color */
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #13bcf04b; /* Change background on hover */
+    background-color: #13bcf04b;
+    /* Change background on hover */
 }
 
 /* Mobile Menu */
@@ -50,7 +56,8 @@ nav {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    margin-left: auto; /* Push the button to the right */
+    margin-left: auto;
+    /* Push the button to the right */
 }
 
 /* Hero Section */
@@ -73,7 +80,7 @@ nav {
     z-index: 0;
 }
 
-.hero > * {
+.hero>* {
     position: relative;
     z-index: 1;
 }
@@ -175,7 +182,8 @@ footer {
 }
 
 /* Login and Signup Buttons */
-.login-btn, .signup-btn {
+.login-btn,
+.signup-btn {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -238,4 +246,121 @@ footer {
     .nutrition-section {
         padding: 30px 10px;
     }
+}
+
+/* Form and Recommendation Container Styling */
+#fitness-form,
+#recommendations {
+    background-color: #a2a2e2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Label Styling (For Form) */
+#fitness-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+/* Input and Select Fields (For Form) */
+#fitness-form input,
+#fitness-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    font-size: 16px;
+}
+
+/* Input focus and hover effect (For Form) */
+#fitness-form input:focus,
+#fitness-form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    background-color: #f0f9ff;
+    outline: none;
+}
+
+#fitness-form input:hover,
+#fitness-form select:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+}
+
+/* Button Styling (For Form) */
+#fitness-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover Effect (For Form) */
+#fitness-form button:hover {
+    background-color: #218838;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Button Click Effect (For Form) */
+#fitness-form button:active {
+    background-color: #1e7e34;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* Recommendation Title Styling */
+#recommendations h3 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Recommendation Text Styling */
+#recommendations p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Strong Text Styling for Recommendations */
+#recommendations strong {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Smooth transition for the recommendation section */
+#recommendations.visible {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h2{
+    text-align: center;
 }

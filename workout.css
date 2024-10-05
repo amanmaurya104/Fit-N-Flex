@@ -1,34 +1,103 @@
+/* Base Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f8;
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
+
 
 /* Navigation Styles */
 nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #292b2c;
+    padding: 10px 20px;
+    background-color: #090b69b6; /* Adjust as needed */
+}
+
+.logo img {
+    max-height: 50px; /* Adjust for desired logo height */
+    width: auto; /* Maintain aspect ratio */
 }
 
 .navbar {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 15px; /* Space between navbar items */
 }
 
-.navbar li a {
-    color: #fff;
+.navbar a {
+    color: #fff; /* Text color */
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    padding: 10px 15px; /* Button-like padding */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for smoother effects */
 }
 
-.navbar li a:hover {
-    color: #f7b731;
+.navbar a:hover {
+    background-color: #13bcf04b; /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 0; /* Remove padding to maximize height */
+    height: 100vh; /* Use full viewport height */
+    background: url('images/background.webp') no-repeat center center; /* Center the image */
+    background-size: cover; /* Ensure the image covers the area */
+    color: white;
+    overflow: hidden; /* Prevent overflow of the pseudo-element */
+}
+
+.hero::before {
+    content: "";
+    position: absolute; /* Position the blur effect */
+    background: inherit; /* Use the same background */
+    filter: blur(10px); /* Adjust the blur intensity */
+    z-index: 0; /* Position behind the text */
+}
+
+.hero > * {
+    position: relative; /* Keep text above the blur */
+    z-index: 1; /* Ensure text is above the blurred background */
+}
+
+.hero-text {
+    color: white; /* Ensure text is readable */
+    padding: 10px; /* Add some padding for better spacing */
+}
+
+.hero-text h1 {
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space between title and paragraph */
+}
+
+.hero-text p {
+    font-size: 1.3em; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space between paragraph and button */
+}
+
+/* Button Styles */
+.cta-btn {
+    background-color: #ff5733; /* Button color */
+    color: white; /* Text color for the button */
+    padding: 12px 25px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+    font-size: 18px; /* Button font size */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.cta-btn:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 /* Workout Section Styles */
@@ -57,6 +126,7 @@ nav {
     text-align: center;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    width: fit-content;
 }
 
 .workout-section h2:hover {
@@ -80,194 +150,20 @@ nav {
 }
 
 video {
-    width:50%;
+    width: 50%;
     border-radius: 10px;
     margin-top: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Button Styles */
-.cta-btn {
-    margin: 30px auto;
-    display: block;
-    padding: 14px 30px;
-    background-color: #292b2c;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 18px;
-}
-
-.cta-btn:hover {
-    background-color: #f7b731;
-    transform: scale(1.05);
-}
-
 /* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #292b2c;
-    color: #fff;
-}
-
-footer .social-links a {
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
-}
-
-footer p {
-    margin-top: 10px;
-}
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #090b69b6; /* Adjust as needed */
-}
-
-.logo img {
-    max-height: 50px; /* Adjust for desired logo height */
-    width: auto; /* Maintain aspect ratio */
-}
-
-.navbar {
-    list-style-type: none;
-    display: flex;
-    gap: 15px; /* Space between navbar items */
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar a {
-    color: #fff; /* Text color */
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #13bcf04b; /* Change background on hover */
-}
-
-.hero {
-    position: relative;
-    text-align: center;
-    font-family: sans-serif;
-    padding: 0; /* Remove padding to maximize height */
-    height: 100vh; /* Use full viewport height */
-    background: url('images/background.webp') no-repeat center center; /* Center the image */
-    background-size: cover; /* Ensure the image covers the area */
-    color: white;
-    overflow: hidden; /* Prevent overflow of the pseudo-element */
-}
-
-.hero::before {
-    content: "";
-    position: absolute; /* Position the blur effect */
-    background: inherit; /* Use the same background */
-    filter: blur(10px); /* Adjust the blur intensity */
-    z-index: 0; /* Position behind the text */
-}
-
-.hero > * {
-    position: relative; /* Keep text above the blur */
-    z-index: 1; /* Ensure text is above the blurred background */
-}
-
-.hero-text {
-    position: relative; /* Keep it above the blurred background */
-    z-index: 1; /* Ensure text is above the background */
-    color: white; /* Ensure text is readable */
-    padding: 10px; /* Add some padding for better spacing */
-}
-
-.hero-text h1 {
-    font-size: 2em; /* Adjust size as needed */
-    margin-bottom: 5px; /* Space between title and paragraph */
-    text-align: center;
-}
-
-.hero-text p {
-    font-size: 1.2em; /* Adjust size as needed */
-    margin-bottom: 10px; /* Space between paragraph and button */
-    text-align: center;
-}
-
-.cta-btn {
-    background-color: #ff5733; /* Example button color */
-    color: white; /* Text color for the button */
-    padding: 10px 20px; /* Button padding */
-    border: none; /* Remove default border */
-    border-radius: 10px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth background color change */
-}
-
-.cta-btn:hover {
-    background-color: #ff4500; /* Darker shade on hover */
-}
-
-.workout-categories {
-    padding: 30px 10px;
-    margin: 20px;
-    text-align: center;
-}
-
-.categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.category {
-    background: #f4f4f4; /* Card background color */
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.category:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.icon img {
-    width: 200px;
-    height: 190px; /* Maintain aspect ratio */
-    border-radius: 4px; /* Optional: rounded corners */
-}
-
-.nutrition-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #eaeaea; /* Background color for nutrition section */
-}
-
 footer {
     background-color: #333; /* Footer background color */
     color: white;
     text-align: center;
     padding: 20px;
+    max-width: 100%;
+    position: relative;
 }
 
 .footer-links,
@@ -313,10 +209,8 @@ footer {
         padding: 30px 10px; /* Reduce padding for smaller screens */
     }
 }
-/* Existing CSS */
 
-/* Add this CSS at the end of your existing CSS */
-
+/* Menu Button for Mobile */
 .menu-button {
     display: none; /* Hidden by default */
     font-size: 24px;
@@ -325,7 +219,7 @@ footer {
     margin-left: auto; /* Push the button to the right */
 }
 
-/* Responsive Design */
+/* Responsive Design for Menu Button */
 @media (max-width: 768px) {
     .menu-button {
         display: block; /* Show the menu button on smaller screens */

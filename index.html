@@ -22,11 +22,12 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#workout-plans">Workout Plans</a></li>
-        <li><a href="#nutrition">Nutrition & Diet</a></li>
+        <li><a href="Diet.html">Nutrition & Diet</a></li>
         <li><a href="#contact">Contact Us</a></li>
+        <button id="start-recognition">Start Voice Assistant</button>
         <!-- Add Login and Signup buttons -->
-        <li><a href="login.html" class="login-btn">Login</a></li>
-        <li><a href="register.html" class="Register-btn">Register</a></li>
+     <!---   <li><a href="login.html" class="login-btn">Login</a></li>
+        <li><a href="register.html" class="Register-btn">Register</a></li> -->
     </ul>
 </nav>
 
@@ -104,7 +105,7 @@
                 <div class="icon">
                     <img src="images/custom-plans.png" alt="Custom Plans">
                 </div>
-                <h3><a href="custom-plans.html">Custom Plans</a></h3>
+                <h3><a href="Plan.html">Custom Plans</a></h3>
                 <p>Personalized plans for your fitness goals</p>
             </div>
         </div>
@@ -118,6 +119,8 @@
             <p>Fuel your body with the right nutrition to maximize workout results. Explore personalized diet plans tailored to your goals.</p>
         </div>
     </section>
+    <button id="start-recognition">Start Voice Assistant</button>
+
 
     <!-- Footer -->
     <footer>
@@ -143,7 +146,59 @@
         menuButton.addEventListener('click', () => {
             navbar.classList.toggle('active');
         });
-    </script>
+    
+  // Check if the browser supports SpeechRecognition
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  if (SpeechRecognition) {
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    // Start recognition on page load
+    recognition.start();
+
+    recognition.onresult = function(event) {
+      const voiceCommand = event.results[0][0].transcript.toLowerCase();
+      console.log('Voice Command:', voiceCommand);
+
+      // Redirect to the respective pages based on the voice command
+      if (voiceCommand.includes('chest')) {
+        window.location.href = 'Chest.html';
+      } else if (voiceCommand.includes('biceps') || voiceCommand.includes('triceps')) {
+        window.location.href = 'biceps-triceps.html';
+      } else if (voiceCommand.includes('legs')) {
+        window.location.href = 'Legs.html';
+      } else if (voiceCommand.includes('back') || voiceCommand.includes('shoulders')) {
+        window.location.href = 'Back.html';
+      } else if (voiceCommand.includes('core') || voiceCommand.includes('abs')) {
+        window.location.href = 'Core.html';
+      } else if (voiceCommand.includes('full body')) {
+        window.location.href = 'Full Body.html';
+      } else if (voiceCommand.includes('cardio') || voiceCommand.includes('hiit')) {
+        window.location.href = 'Hiit.html';
+      } else if (voiceCommand.includes('yoga') || voiceCommand.includes('flexibility')) {
+        window.location.href = 'Yoga.html';
+      } else if (voiceCommand.includes('custom plans') || voiceCommand.includes('plans')) {
+        window.location.href = 'Plan.html';
+      } else {
+        console.log('No matching page for the command:', voiceCommand);
+      }
+    };
+
+    recognition.onspeechend = function() {
+      recognition.stop();
+    };
+
+    recognition.onerror = function(event) {
+      console.log('Error occurred in recognition:', event.error);
+    };
+  } else {
+    console.log("Your browser does not support voice recognition.");
+  }
+</script>
+
 
 </body>
 </html>
